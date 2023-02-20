@@ -279,7 +279,7 @@ const operationInfo = () => {
   };
 };
 
-// *******************************NEW OPERATION*********************************
+// ******************NEW OPERATION********************
 
 const generateNewOperation = () => {
   if ($("#description").value === "") {
@@ -301,7 +301,7 @@ $("#descriptionEdit").addEventListener("keypress", (e) => {
   }
 });
 
-// ***************************************DELETE OPERATION**********************************************
+// ***********************DELETE OPERATION***************************
 
 const deleteOperation = (operationId) => {
   $("#tableContainer").innerHTML = "";
@@ -318,7 +318,7 @@ const findOperation = (ids) => {
   return operations.find((operations) => operations.ids === ids);
 };
 
-// **************************************EDIT & CANCEL*************************************************
+// ************************EDIT & CANCEL*******************************
 const operationsEdit = (ids) => {
   $("#btnEditOperation").setAttribute("data-id", ids);
   $("#editOperationContainer").classList.remove("hidden");
@@ -805,7 +805,7 @@ const generateReportsTable = () => {
   }
 };
 
-// ********* DOM FUNCTIONS **********
+// ********* DOM **********
 const toggleFilter = $("#toggleFilters");
 const containerFilter = $("#filterContainer");
 const btnAddOperation = $("#btnAddOperation");
